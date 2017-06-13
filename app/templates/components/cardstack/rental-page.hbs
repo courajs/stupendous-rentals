@@ -5,7 +5,9 @@
       <strong>Owner:</strong> {{cs-field content "owner"}}
     </div>
     <div class="detail owner">
-      <strong>Realtor:</strong> {{content.realtor.name}}
+      {{#cs-field content "realtor" as |realtor|}}
+        <strong>Realtor:</strong> {{link-to realtor.name 'realtor' realtor}}
+      {{/cs-field}}
     </div>
     <div class="detail">
       {{#cs-field content "propertyType" as |propertyType|}}
