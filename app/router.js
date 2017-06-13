@@ -13,6 +13,7 @@ Router.map(function() {
   this.route('rentals', function() {
     this.route('show', { path: '/:rental_id' });
   });
+  this.route('realtor', { path: '/realtor/:realtor_id' });
   this.route('cs', cardstackRoutes);
 });
 
