@@ -1,0 +1,16 @@
+{
+  "attributes": {
+    "is-built-in": false
+  },
+  "relationships": {
+    "fields": {
+      "data": [
+        {
+          "type": "fields",
+          "id": "name"
+        }
+      ]
+    },
+    "data-source": null
+  }
+}

@@ -7,5 +7,13 @@
     "bedrooms": 1,
     "image": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Alfonso_13_Highrise_Tegucigalpa.jpg",
     "description": "A commuters dream. This rental is within walking distance of 2 bus stops and the Metro."
+  },
+  "relationships": {
+    "realtor": {
+      "data": {
+        "type": "realtors",
+        "id": "057d62aef2829dea1341eef4862bc95187e652e4"
+      }
+    }
   }
 }
