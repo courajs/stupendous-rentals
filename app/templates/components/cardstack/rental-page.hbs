@@ -5,7 +5,9 @@
       <strong>Owner:</strong> {{cs-field content "owner"}}
     </div>
     <div class="detail">
-      {{#cs-field content "propertyType" as |propertyType|}}<strong>Type:</strong> {{rental-property-type propertyType}} - {{propertyType}}{{/cs-field}}
+      {{#cs-field content "propertyType" as |propertyType|}}
+        <strong>Type:</strong> {{rental-property-type propertyType}} - {{propertyType}}
+      {{/cs-field}}
     </div>
     <div class="detail">
       <strong>Location:</strong> {{cs-field content "city"}}
@@ -20,6 +22,8 @@
     <p class="description">{{cs-field content "description"}}</p>
   </div>
 
-  {{cs-field content "image"}}
+  {{#cs-field content "image" as |src|}}
+    <img src={{src}} class="rental-pic">
+  {{/cs-field}}
 
 </div>
