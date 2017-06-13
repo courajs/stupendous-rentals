@@ -4,6 +4,9 @@
     <div class="detail owner">
       <strong>Owner:</strong> {{cs-field content "owner"}}
     </div>
+    <div class="detail owner">
+      <strong>Realtor:</strong> {{content.realtor.name}}
+    </div>
     <div class="detail">
       {{#cs-field content "propertyType" as |propertyType|}}
         <strong>Type:</strong> {{rental-property-type propertyType}} - {{propertyType}}

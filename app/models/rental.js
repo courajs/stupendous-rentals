@@ -11,6 +11,8 @@ export default BaseModel.extend({
   description: DS.attr({fieldType: '@cardstack/core-types::string'}),
   bedrooms: DS.attr({fieldType: '@cardstack/core-types::integer'}),
 
+  realtor: DS.belongsTo('realtor'),
+
   sleeps: Ember.computed('bedrooms', function() {
     return this.get('bedrooms') * 4;
   })
